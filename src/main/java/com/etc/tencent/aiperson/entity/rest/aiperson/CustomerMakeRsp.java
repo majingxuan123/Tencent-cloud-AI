@@ -1,0 +1,34 @@
+package com.etc.tencent.aiperson.entity.rest.aiperson;
+
+import com.alibaba.fastjson2.annotation.JSONField;
+import com.etc.tencent.aiperson.entity.rest.IRestEntity;
+import com.etc.tencent.aiperson.entity.rest.ITencentCloudRestRsp;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+/**
+ * Description :
+ *
+ * @Author JayChou
+ * @Date 2025/4/23 14:40
+ */
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+public class CustomerMakeRsp implements IRestEntity, ITencentCloudRestRsp {
+
+    /**
+     *制作的任务 ID，携带 TaskId 访问进度查询接口 (https://cloud.tencent.com/document/product/1240/96070)
+     * ，可获得制作进度和制作结果
+     */
+    @JSONField(name = "TaskId")
+    @JsonProperty("TaskId")
+    private String TaskId;
+
+}
