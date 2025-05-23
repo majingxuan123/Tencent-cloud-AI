@@ -5,7 +5,7 @@
 
 本SDK提供与腾讯云智能数智人服务的集成能力，支持数字人创建、语音合成、视频生成等核心功能。
 
--[腾讯云官方文档地址](#https://cloud.tencent.com/document/product/1240)
+-[腾讯云官方文档地址](https://cloud.tencent.com/document/product/1240)
 
 ## 目录
 - [功能特性](#功能特性)
